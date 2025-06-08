@@ -4,7 +4,9 @@
 Este proyecto consiste en el diseño de una placa PCB con componentes y sensores modulares para la adquisición y transmisión de señales acelerométricas, destinada a redes de control sísmico. La placa integra un microcontrolador **ESP32** para procesamiento y comunicación inalámbrica, junto con componentes electrónicos y sensores optimizados para garantizar precisión en la medición de vibraciones. Los dispositivos utilizados usan comunicación SPI, I2C y UART. Estos tres protocolos son ampliamente utilizados en electrónica para la transferencia de datos entre dispositivos como microcontroladores, sensores, memorias, etc.  
 
 Las conexiones necesarias para la comunicación SPI (Serial Peripheral Interface) son: SCLK (Reloj), MOSI (Master Out Slave In), MISO (Master In Slave Out), SS/CS (Selección de esclavo).
+
 Las conexiones necesarias para la comunicación I2C (Inter-Integrated Circuit) son: SCL (Reloj) y SDA (Datos).
+
 Las conexiones necesarias para la comunicación UART (Universal Asynchronous Receiver-Transmitter) son: TX (Transmisión) y RX (Recepción).
 
 En este proyecto el módulo GPS usa comunicación UART, el acelerómetro ADXL355Z usa comunicación SPI, el módulo RTC-DS3231 usa comunicación I2C, la tarjeta µSD usa comunicación SPI. La comunicación del DEVKIT-ESP32 con la entrada USB usa el protocolo UART. En cuanto a la alimentación del sistema, todos los dispositivos implementados se alimentan con un voltaje de +3.3V, este valor se consigue a partir de un Buck-Converter de +12V a +5V y un regulador de voltaje LD33V con salida de +3.3V.
