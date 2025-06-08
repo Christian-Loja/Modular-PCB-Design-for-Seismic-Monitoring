@@ -9,12 +9,14 @@ Este proyecto consiste en el diseño de una placa PCB con componentes y sensores
 A continuación se detallan los componentes clave del diseño:  
 
 ### 🎛️ Microcontrolador  
-- **ESP32-WROOM-32** (Modelo: `ESP32-WROOM-32E`, Tipo: `SMD`).  
+- **ESP32-DEVKITC-32D** (Microcontrolador base: `ESP32-WROOM-32E`).  
 
 ### 📊 Sensores, Módulos y Reloj
 - **Acelerómetro** (Modelo: `ADXL355Z` o equivalente, Tipo: `Modular`).
 - **GPS** (Modelo: `GPS-FPGMMOPA6H` o equivalente, Tipo: `Modular`).
-- **RTC** (Modelo: `DS3231` o equivalente, Tipo: `SMD SOIC-16`).  
+- **RTC** (Modelo: `RTC-DS3231` o equivalente, Tipo: `Modular`).
+- **Buck-Converter** (Modelo: `MH-MINI-360` o equivalente, Tipo: `Modular`).
+- **Lector µSD** (Tipo: `Modular`).
 
 ### 🔧 Circuitos Integrados (ICs)  
 - **LD33V** (Tipo: `SMD SOT-223` o equivalente). 
